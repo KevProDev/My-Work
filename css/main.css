@@ -1,3 +1,95 @@
+.nav-main {
+  width: 100%;
+  padding: 18px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 10;
+  position: relative; }
+
+@media screen and (max-width: 1000px) {
+  .nav-main {
+    padding: 10px 10px; } }
+
+@media screen and (max-width: 1000px) {
+  .nav-main nav {
+    text-align: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center; }
+  .q {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: #fff; } }
+
+.nav-main h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #5F6D7E;
+  font-size: 2.5rem; }
+
+@media screen and (max-width: 1660px) {
+  .nav-main h1 {
+    font-size: 1.8rem; } }
+
+@media screen and (max-width: 1260px) {
+  .nav-main h1 {
+    font-size: 1.3rem; } }
+
+.navbar-toggle {
+  display: none; }
+
+@media screen and (max-width: 1000px) {
+  .nav-main h1 {
+    font-size: 2.3rem; }
+  .navbar-toggle {
+    display: block; }
+  .navbar-menu {
+    display: none; } }
+
+.nav-main li {
+  display: inline-block;
+  padding: 0px 30px; }
+
+.nav-main a {
+  text-align: center;
+  color: #5F6D7E;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 20px;
+  font-weight: 600;
+  text-transform: capitalize; }
+
+@media screen and (max-width: 1660px) {
+  .nav-main a {
+    font-size: 1.8rem; } }
+
+@media screen and (max-width: 1260px) {
+  .nav-main a {
+    font-size: 1.3rem; } }
+
+@media screen and (max-width: 1000px) {
+  .nav-main a {
+    display: block;
+    color: #5F6D7E;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    text-align: center; } }
+
+.nav-main a:hover {
+  color: black;
+  transition: .5s; }
+
+.nav-main img {
+  width: 100%; }
+
+.show {
+  display: block; }
+
 /*--------------------------------------------------------
   1.0 Resets & Utility
 ----------------------------------------------------------*/
@@ -122,7 +214,7 @@ html {
 /*--------------------------------------------------------
   5.3 Navbar
 ----------------------------------------------------------*/
-.navbar {
+.my_navbar {
   position: fixed;
   z-index: 9999;
   right: 2rem;
@@ -130,16 +222,16 @@ html {
   transform: translateY(-50%); }
 
 @media (max-width: 580px) {
-  .navbar {
+  .my_navbar {
     display: none; } }
 
-.navbar__item:not(:last-child) {
+.my_navbar__item:not(:last-child) {
   margin-bottom: 1.5rem; }
 
-.navbar__item {
+.my_navbar__item {
   position: relative; }
 
-.navbar__link {
+.my_navbar__link {
   display: inline-block;
   font-size: 1.6rem;
   width: 3.5rem;
@@ -151,14 +243,14 @@ html {
   color: #fff;
   text-align: center; }
 
-.active {
+.my_active {
   font-size: 3rem;
   width: 5.5rem;
   height: 5.5rem;
   line-height: 5.5rem;
   background-color: #1854bd; }
 
-.navbar__item--text {
+.my_navbar__item--text {
   position: absolute;
   top: 50%;
   left: 0;
@@ -171,23 +263,23 @@ html {
   font-weight: 600;
   text-transform: uppercase; }
 
-.navbar__link:hover + .navbar__item--text-1 {
+.my_navbar__link:hover + .my_navbar__item--text-1 {
   opacity: 1;
   left: -150%; }
 
-.navbar__link:hover + .navbar__item--text-2 {
+.my_navbar__link:hover + .my_navbar__item--text-2 {
   opacity: 1;
   left: -230%; }
 
-.navbar__link:hover + .navbar__item--text-3 {
+.my_navbar__link:hover + .my_navbar__item--text-3 {
   opacity: 1;
   left: -200%; }
 
-.navbar__link:hover + .navbar__item--text-4 {
+.my_navbar__link:hover + .my_navbar__item--text-4 {
   opacity: 1;
   left: -155%; }
 
-.navbar__link:hover + .navbar__item--text-5 {
+.my_navbar__link:hover + .my_navbar__item--text-5 {
   opacity: 1;
   left: -200%; }
 
@@ -203,6 +295,9 @@ html {
   @media (max-width: 780px) {
     .skill {
       padding: 5rem 2rem; } }
+  @media screen and (max-width: 1000px) {
+    .skill {
+      padding: 2rem 1rem; } }
 
 .sub__heading {
   font-size: 5.4rem;
@@ -254,6 +349,7 @@ body {
 .hero {
   padding: 10rem 9rem;
   background-color: #fff;
+  padding: 0 9rem 10rem 9rem;
   height: 100vh;
   overflow: hidden;
   position: relative; }
@@ -263,6 +359,9 @@ body {
   @media (max-width: 780px) {
     .hero {
       padding: 5rem 2rem; } }
+  @media screen and (max-width: 1000px) {
+    .hero {
+      padding: 2rem 1rem; } }
 
 .hero__letter {
   font-size: 70rem;
@@ -274,6 +373,16 @@ body {
   left: 7rem;
   z-index: 1;
   color: rgba(202, 202, 202, 0.3); }
+
+@media screen and (max-width: 1660px) {
+  .hero__letter {
+    font-size: 30rem;
+    top: 15rem; } }
+
+@media screen and (max-width: 1000px) {
+  .hero__letter {
+    font-size: 36rem;
+    top: 15rem; } }
 
 .hero__content {
   position: absolute;
@@ -289,22 +398,49 @@ body {
   color: #5F6D7E;
   letter-spacing: -.5rem; }
 
+@media screen and (max-width: 1660px) {
+  .hero__heading {
+    font-size: 5rem; } }
+
+@media screen and (max-width: 1000px) {
+  .hero__heading {
+    font-size: 3rem;
+    letter-spacing: normal; } }
+
 .hero__heading a {
   color: #1854bd;
   position: relative; }
 
+@media screen and (max-width: 1000px) {
+  .hero__heading a {
+    font-size: 2rem; } }
+
 @media (max-width: 680px) {
   .hero {
     height: 50vh; }
-  .hero__letter {
-    font-size: 60rem;
-    top: -7rem;
-    left: 10%; }
   .hero__content {
     left: 40%;
     transform: translate(-40%, -20%); }
   .hero__heading {
     font-size: 5.5rem; } }
+
+.background-color {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: -5rem;
+  background-color: #2966d0; }
+
+@media screen and (max-width: 1000px) {
+  .background-color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: -5rem;
+    background-color: #2966d0;
+    left: 0; } }
 
 /*--------------------------------------------------------
   5.3 My Work
@@ -318,6 +454,9 @@ body {
   @media (max-width: 780px) {
     .latest-work {
       padding: 5rem 2rem; } }
+  @media screen and (max-width: 1000px) {
+    .latest-work {
+      padding: 2rem 1rem; } }
 
 .space-out {
   padding: 50px 0px; }
@@ -388,7 +527,7 @@ body {
   .project__demo.project__demo__color_2 {
     color: #fff;
     border: 2px solid #fff;
-    background-color: #011c4a; }
+    background-color: #577ab5; }
 
 .project__demo:last-child {
   margin-left: 6rem; }
@@ -421,6 +560,9 @@ body {
   @media (max-width: 780px) {
     .aboutme {
       padding: 5rem 2rem; } }
+  @media screen and (max-width: 1000px) {
+    .aboutme {
+      padding: 2rem 1rem; } }
 
 .about__box img {
   width: 100%; }
@@ -481,6 +623,9 @@ body {
   @media (max-width: 780px) {
     .contact {
       padding: 5rem 2rem; } }
+  @media screen and (max-width: 1000px) {
+    .contact {
+      padding: 2rem 1rem; } }
 
 .contact-container {
   max-width: 114rem;

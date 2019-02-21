@@ -1,4 +1,4 @@
- 
+
 $(document).ready(function () {
 
   /* Every time the window is scrolled ... */
@@ -46,8 +46,8 @@ $(document).ready(function () {
 
       
       if (sectionOffset <= scrollbarLocation) {
-        $(this).addClass('active');
-        $(this).parent().siblings().children().removeClass('active');
+        $(this).addClass('my_active');
+        $(this).parent().siblings().children().removeClass('my_active');
         
         
       }
@@ -96,3 +96,33 @@ for(var i = 0; i < suspects.length; i++){
 
   suspectsList.push(suspect);
 }
+
+
+// Responsive Nav to toggle the menu display
+$(function() {
+	menu = $('nav ul');
+
+  $('#openup').on('click', function(e) {
+    e.preventDefault(); menu.slideToggle();
+  });
+  
+  $(window).resize(function(){
+    var w = $(this).width(); if(w > 1000 && menu.is(':hidden')) {
+      menu.removeAttr('style');
+    }
+  });
+  
+  $('nav li').on('click', function(e) {                
+    var w = $(window).width(); if(w < 480 ) {
+      menu.slideToggle(); 
+    }
+  });
+  $('.open-menu').height($(window).height());
+});
+
+
+
+// Toggle open and close nav block on click
+$('#navbar-toggle').click(function() {
+  $('.navbar-menu').slideToggle();
+});
