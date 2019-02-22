@@ -18,12 +18,13 @@
     text-align: center;
     flex-basis: 100%;
     flex-grow: 1;
-    align-items: center; }
-  .q {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-    background-color: #fff; } }
+    align-items: center; } }
+
+.q {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background-color: #fff; }
 
 .nav-main h1 {
   font-family: "Open Sans", sans-serif;
@@ -107,7 +108,8 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -763,6 +765,9 @@ body {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
+  color: #fff; }
+
+.social__item a {
   color: #fff; }
 
 .social__item span {

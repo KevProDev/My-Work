@@ -24,9 +24,9 @@ $(document).ready(function () {
     });
 
   });
-
-  // Smooth scrolling
-
+  //////////////////////
+  // Smooth scrolling //
+  //////////////////////
   var scrollLink = $('.scroll');
 
   scrollLink.click(function(e){
@@ -36,7 +36,11 @@ $(document).ready(function () {
     }, 1000 );
   });
 
-  // Active Button switching
+  /////////////////////////////////
+
+    //////////////////////
+  // Active Button switching //
+  //////////////////////
 
   $(window).scroll(function(){
     var scrollbarLocation = $(this).scrollTop();
@@ -61,17 +65,17 @@ $(document).ready(function () {
   })
 
 
-  var plainScrollLink = $(".basic-scroll");
+//   var plainScrollLink = $(".basic-scroll");
 
-  plainScrollLink.click(function(e){
-    e.preventDefault();
-    $('html,body').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 1000);
-  })
+//   plainScrollLink.click(function(e){
+//     e.preventDefault();
+//     $('html,body').animate({
+//       scrollTop: $(this.hash).offset().top
+//     }, 1000);
+//   })
 
 
-});
+// });
 
 // $(function() {
 //   $(".project__details").fadeOut(1000);
@@ -81,48 +85,48 @@ $(document).ready(function () {
 
 
 
-function createSuspectObjects(name){
-  return {
-    name: name,
-    lastname: name.split(' ')[1],
-    speak() {
-      console.log("my name is ", name); 
-    }
-  };
-};
+// function createSuspectObjects(name){
+//   return {
+//     name: name,
+//     lastname: name.split(' ')[1],
+//     speak() {
+//       console.log("my name is ", name); 
+//     }
+//   };
+// };
 
-var suspects = ['Kevin Johnson', 'Lichine Johnson', 'Val Johnson'];
+// var suspects = ['Kevin Johnson', 'Lichine Johnson', 'Val Johnson'];
 
-var suspectsList = [];
+// var suspectsList = [];
 
-for(var i = 0; i < suspects.length; i++){
-  var suspect = createSuspectObjects(suspects[i]);
+// for(var i = 0; i < suspects.length; i++){
+//   var suspect = createSuspectObjects(suspects[i]);
 
-  suspectsList.push(suspect);
-}
+//   suspectsList.push(suspect);
+// }
 
 
-// Responsive Nav to toggle the menu display
-$(function() {
-	menu = $('nav ul');
+// // Responsive Nav to toggle the menu display
+// $(function() {
+// 	menu = $('nav ul');
 
-  $('#openup').on('click', function(e) {
-    e.preventDefault(); menu.slideToggle();
-  });
+//   $('#openup').on('click', function(e) {
+//     e.preventDefault(); menu.slideToggle();
+//   });
   
-  $(window).resize(function(){
-    var w = $(this).width(); if(w > 1000 && menu.is(':hidden')) {
-      menu.removeAttr('style');
-    }
-  });
+//   $(window).resize(function(){
+//     var w = $(this).width(); if(w > 1000 && menu.is(':hidden')) {
+//       menu.removeAttr('style');
+//     }
+//   });
   
-  $('nav li').on('click', function(e) {                
-    var w = $(window).width(); if(w < 480 ) {
-      menu.slideToggle(); 
-    }
-  });
-  $('.open-menu').height($(window).height());
-});
+//   $('nav li').on('click', function(e) {                
+//     var w = $(window).width(); if(w < 480 ) {
+//       menu.slideToggle(); 
+//     }
+//   });
+//   $('.open-menu').height($(window).height());
+// });
 
 
 
