@@ -171,7 +171,12 @@ html {
     width: calc((100% - 6rem));
     float: inherit;
     margin: 0 auto;
-    display: block; }
+    display: block; } }
+  @media screen and (max-width: 680px) and (max-width: 780px) {
+    .row [class^="col-"] {
+      width: calc((100% - 2rem)); } }
+
+@media (max-width: 680px) {
   .row [class^="col-"]:not(:last-child) {
     margin-right: inherit; } }
 
@@ -308,6 +313,10 @@ html {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 2rem; }
 
+@media screen and (max-width: 1000px) {
+  .sub__heading {
+    font-size: 3.4rem; } }
+
 .skill__box {
   text-align: center; }
 
@@ -405,10 +414,17 @@ body {
 @media screen and (max-width: 1000px) {
   .hero__content {
     position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    top: 50%;
     left: 50%;
+    transform: translate(-25%, -25%);
+    z-index: 2; } }
+
+@media screen and (max-width: 768px) {
+  .hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
     z-index: 2; } }
 
 .hero__heading {
@@ -497,6 +513,10 @@ body {
   .project__heading {
     font-size: 3rem; } }
 
+@media screen and (max-width: 768px) {
+  .project__heading {
+    font-size: 2rem; } }
+
 .project__heading_sub {
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
@@ -504,6 +524,24 @@ body {
   color: #5F6D7E;
   color: #fff;
   font-weight: bold; }
+
+@media screen and (max-width: 1000px) {
+  .project__heading_sub {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #5F6D7E;
+    color: #fff;
+    font-weight: bold; } }
+
+@media screen and (max-width: 768px) {
+  .project__heading_sub {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #5F6D7E;
+    color: #fff;
+    font-weight: 400; } }
 
 .project__desc {
   font-size: 1.8rem;
@@ -545,6 +583,10 @@ body {
 .project__demo:last-child {
   margin-left: 6rem; }
 
+@media screen and (max-width: 768px) {
+  .project__demo:last-child {
+    margin-left: 0rem; } }
+
 .project__demo:hover {
   transform: translateY(-3px);
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3); }
@@ -553,13 +595,23 @@ body {
   .project__img {
     width: calc((100% - 6rem));
     float: inherit;
-    margin: 0 auto; }
+    margin: 0 auto; } }
+  @media screen and (max-width: 680px) and (max-width: 780px) {
+    .project__img {
+      width: calc((100% - 2rem)); } }
+
+@media (max-width: 680px) {
   .project__details {
     width: calc((100% - 6rem));
     float: inherit;
-    margin: 0 auto; }
+    margin: 0 auto; } }
+  @media screen and (max-width: 680px) and (max-width: 780px) {
+    .project__details {
+      width: calc((100% - 2rem)); } }
+
+@media (max-width: 680px) {
   .project__desc, .project__skills {
-    padding-left: 2rem; } }
+    padding-left: 0rem; } }
 
 /*--------------------------------------------------------
   5.3 About Me
@@ -585,6 +637,14 @@ body {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .about__heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 2rem;
+    font-weight: 500; } }
 
 .about__text:not(:last-child) {
   margin-bottom: 3rem; }
