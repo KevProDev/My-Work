@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     });
 
-  });
+  })
   //////////////////////
   // Smooth scrolling //
   //////////////////////
@@ -65,17 +65,19 @@ $(document).ready(function () {
   })
 
 
-//   var plainScrollLink = $(".basic-scroll");
-
-//   plainScrollLink.click(function(e){
-//     e.preventDefault();
-//     $('html,body').animate({
-//       scrollTop: $(this.hash).offset().top
-//     }, 1000);
-//   })
 
 
-// });
+  var plainScrollLink = $(".basic-scroll");
+
+  plainScrollLink.click(function(e){
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000);
+  })
+
+
+});
 
 // $(function() {
 //   $(".project__details").fadeOut(1000);

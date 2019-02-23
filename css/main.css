@@ -454,12 +454,16 @@ body {
     z-index: 2; } }
 
 .hero__heading {
-  font-size: 8rem;
+  font-size: 7rem;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.1;
   font-weight: 900;
   color: #5F6D7E;
   letter-spacing: -.5rem; }
+
+.hero__heading a {
+  color: #1854bd;
+  position: relative; }
 
 @media screen and (max-width: 1660px) {
   .hero__heading, .hero__heading a {
@@ -474,10 +478,6 @@ body {
   .hero__heading, .hero__heading a {
     font-size: 3rem;
     letter-spacing: normal; } }
-
-.hero__heading a {
-  color: #1854bd;
-  position: relative; }
 
 .background-color {
   width: 50%;
