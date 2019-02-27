@@ -513,6 +513,9 @@ body {
 .project__img {
   width: calc((100% - 10rem) / 2); }
 
+.latest-work .project3 img {
+  width: 270px; }
+
 .project__img img {
   width: 100%;
   vertical-align: top; }
@@ -654,6 +657,37 @@ body {
   @media screen and (max-width: 1000px) {
     .aboutme {
       padding: 2rem 2rem; } }
+
+.resume__item {
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  width: 25%; }
+
+.resume__item {
+  margin-bottom: 1.5rem;
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+.resume__link {
+  font-size: 2rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff; }
+
+.resume__item a {
+  font-size: 2.6rem;
+  color: #8793a7;
+  font-weight: 600; }
+
+.resume__item a:hover {
+  color: #606D7E; }
+
+.resume__item span {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-left: 1rem; }
 
 .about__box img {
   width: 100%; }
