@@ -40,7 +40,9 @@
     font-size: 1.3rem; } }
 
 .navbar-toggle {
-  display: none; }
+  display: none;
+  background-color: transparent;
+  border: none; }
 
 @media screen and (max-width: 1000px) {
   .nav-main h1 {
@@ -484,7 +486,6 @@ body {
   height: 100%;
   position: absolute;
   right: 0;
-  top: -5rem;
   background-color: #2966d0; }
 
 @media screen and (max-width: 1000px) {
